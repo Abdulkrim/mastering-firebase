@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:fluttercourse/components/custombuttonauth.dart';
-import 'package:fluttercourse/components/customlogoauth.dart';
+import '../components/custombuttonauth.dart';
 import 'package:fluttercourse/components/textformfield.dart';
+import 'package:fluttercourse/components/customlogoauth.dart';
+
+
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -83,7 +85,7 @@ class _LoginState extends State<Login> {
           // Text("Don't Have An Account ? Resister" , textAlign: TextAlign.center,)
           InkWell(
             onTap: () {
-              Navigator.of(context).pushNamed("signup") ;
+              Navigator.of(context).pushReplacementNamed("signup") ;
             },
             child: const Center(
               child: Text.rich(TextSpan(children: [
